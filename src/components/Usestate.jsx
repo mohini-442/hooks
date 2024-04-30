@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 const Usestate = () => {
     const [color, setColor] = useState("red");
     const [count, setCount] = useState(0);
+    const [age, setAge] = useState(19)
+    const handleClick = () => setAge(age + 1)
     return (
         <div>
             <div className='container mx-auto py-5'>
@@ -31,6 +33,12 @@ const Usestate = () => {
                     <button className='btn-1' onClick={() => setCount(count + 1)}>
                         Click me
                     </button>
+                </div>
+                <div className='d-flex flex-column  align-items-center mx-auto pt-4'>
+                    <h3> Today I am {age} Years of Age</h3>
+                    <div>
+                        <button className='btn-1' onClick={handleClick}>Get older! </button>
+                    </div>
                 </div>
             </div>
         </div>

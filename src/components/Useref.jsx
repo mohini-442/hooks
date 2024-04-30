@@ -21,7 +21,6 @@ const Useref = () => {
                     />
                     <h2>Render Count: {count.current}</h2>
                 </div>
-                
             </div>
         </div>
     )
